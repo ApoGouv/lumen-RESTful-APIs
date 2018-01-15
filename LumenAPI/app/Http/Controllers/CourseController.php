@@ -22,7 +22,12 @@ class CourseController extends Controller
     }
 
     public function show($id){
-        return __METHOD__;
+        $course = Course::find($id);
+        if($course){
+            return $this->createSuccessResponse($course, 200);
+        }
+
+        return $this->createErrorResponse("The course with id {$id}, does not exists", 404);
     }   
 
 }

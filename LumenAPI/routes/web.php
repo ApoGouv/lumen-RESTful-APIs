@@ -18,7 +18,7 @@ $router->get('/', function () use ($router) {
 // Teachers
 $router->get('/teachers', 'TeacherController@index');
 $router->post('/teachers', 'TeacherController@store');
-$router->get('/teachers/{teachers}', 'TeacherController@index');
+$router->get('/teachers/{teachers}', 'TeacherController@show');
 $router->put('/teachers/{teachers}', 'TeacherController@update');
 $router->patch('/teachers/{teachers}', 'TeacherController@update');
 $router->delete('/teachers/{teachers}', 'TeacherController@destroy');
@@ -26,7 +26,7 @@ $router->delete('/teachers/{teachers}', 'TeacherController@destroy');
 // Students
 $router->get('/students', 'StudentController@index');
 $router->post('/students', 'StudentController@store');
-$router->get('/students/{students}', 'StudentController@index');
+$router->get('/students/{students}', 'StudentController@show');
 $router->put('/students/{students}', 'StudentController@update');
 $router->patch('/students/{students}', 'StudentController@update');
 $router->delete('/students/{students}', 'StudentController@destroy');

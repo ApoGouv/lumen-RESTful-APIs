@@ -1,0 +1,576 @@
+{
+	"info": {
+		"name": "Lumen-REST-API-Tutorial",
+		"_postman_id": "9345999b-2474-88a5-51e5-068ac93cf648",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Teachers",
+			"description": "",
+			"item": [
+				{
+					"name": "/teachers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers"
+							]
+						},
+						"description": "GET all students"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers"
+							]
+						},
+						"description": "Save a Student"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}"
+							]
+						},
+						"description": "Get teacher by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}"
+							]
+						},
+						"description": "Update teacher by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}"
+							]
+						},
+						"description": "Update teacher by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}"
+							]
+						},
+						"description": "Delete teacher by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Students",
+			"description": "",
+			"item": [
+				{
+					"name": "/students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"students"
+							]
+						},
+						"description": "GET all students"
+					},
+					"response": []
+				},
+				{
+					"name": "/students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"students"
+							]
+						},
+						"description": "Save a Student"
+					},
+					"response": []
+				},
+				{
+					"name": "/students/{students}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/students/{students}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"students",
+								"{students}"
+							]
+						},
+						"description": "Get student by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/students/{students}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/students/{students}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"students",
+								"{students}"
+							]
+						},
+						"description": "Update student by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/students/{students}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/students/{students}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"students",
+								"{students}"
+							]
+						},
+						"description": "Update student by id"
+					},
+					"response": []
+				},
+				{
+					"name": "/students/{students}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/students/{students}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"students",
+								"{students}"
+							]
+						},
+						"description": "Delete student by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"description": "",
+			"item": [
+				{
+					"name": "/courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"courses"
+							]
+						},
+						"description": "Get all courses"
+					},
+					"response": []
+				},
+				{
+					"name": "/courses/{courses}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/courses/{courses}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"courses",
+								"{courses}"
+							]
+						},
+						"description": "Get course by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TeacherCourses",
+			"description": "",
+			"item": [
+				{
+					"name": "/teachers/{teachers}/courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}",
+								"courses"
+							]
+						},
+						"description": "Get all courses by teacher id"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}/courses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}",
+								"courses"
+							]
+						},
+						"description": "Add.Save course to a teacher, by teacher id"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}/courses/{courses}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}/courses/{courses}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}",
+								"courses",
+								"{courses}"
+							]
+						},
+						"description": "Update specific course (id) from a specific teacher (id)"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}/courses/{courses}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}/courses/{courses}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}",
+								"courses",
+								"{courses}"
+							]
+						},
+						"description": "Update specific course (id) from a specific teacher (id)"
+					},
+					"response": []
+				},
+				{
+					"name": "/teachers/{teachers}/courses/{courses}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/teachers/{teachers}/courses/{courses}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"teachers",
+								"{teachers}",
+								"courses",
+								"{courses}"
+							]
+						},
+						"description": "Delete specific course (id) from a specific teacher (id)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CourseStudents",
+			"description": "",
+			"item": [
+				{
+					"name": "/courses/{courses}/students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/courses/{courses}/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"courses",
+								"{courses}",
+								"students"
+							]
+						},
+						"description": "Get all students for a specific course (id)"
+					},
+					"response": []
+				},
+				{
+					"name": "/courses/{courses}/students/{students}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/courses/{courses}/students/{students}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"courses",
+								"{courses}",
+								"students",
+								"{students}"
+							]
+						},
+						"description": "Add/Save specific student (id) to a specific course (id)"
+					},
+					"response": []
+				},
+				{
+					"name": "/courses/{courses}/students/{students}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/lumen-RESTful-APIs/LumenAPI/public/courses/{courses}/students/{students}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lumen-RESTful-APIs",
+								"LumenAPI",
+								"public",
+								"courses",
+								"{courses}",
+								"students",
+								"{students}"
+							]
+						},
+						"description": "Remove specific student (id) to a specific course (id)"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Course;
+
 class CourseController extends Controller
 {
     /**
@@ -15,10 +17,11 @@ class CourseController extends Controller
     }
 
     public function index(){
-        return __METHOD__;
+        $courses = Course::all();
+        return $this->createSuccessResponse($courses, 200);
     }
 
-    public function show(){
+    public function show($id){
         return __METHOD__;
     }   
 

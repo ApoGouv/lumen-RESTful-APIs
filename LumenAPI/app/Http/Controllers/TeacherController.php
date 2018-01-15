@@ -33,6 +33,43 @@ class TeacherController extends Controller
     }   
 
     public function store(Request $request){
+        
+        $this->validateRequest($request);
+
+        $teacher = Teacher::create($request->all());
+        return $this->createSuccessResponse("The teacher with id {$teacher->id} has been created", 201);
+    }
+
+    public function update(Request $request, $student_id){
+
+        // obtain the teacher
+        $teacher = Teacher::find($student_id);
+
+        // verify the teacher exists
+        if ($teacher) {
+
+            // validate the request
+            $this->validateRequest($request);
+
+            $teacher->name = $request->get('name');
+            $teacher->phone = $request->get('phone');
+            $teacher->address = $request->get('address');
+            $teacher->profession = $request->get('profession');
+
+            $teacher->save();
+
+            return $this->createSuccessResponse("The teacher with id {$teacher->id} has been updated", 201);
+        }
+
+        // return error if teacher does not exist
+        return $this->createErrorResponse("The teacher with the specified id does not exists.", 404);
+    }
+
+    public function destroy(){
+        return __METHOD__;
+    }
+
+    function validateRequest($request){
         $rules = [
             'name' => 'required',
             'phone' => 'required|numeric',
@@ -41,17 +78,7 @@ class TeacherController extends Controller
         ];
 
         $this->validate($request, $rules);
-
-        $teacher = Teacher::create($request->all());
-        return $this->createSuccessResponse("The teacher with id {$teacher->id} has been created", 201);
     }
 
-    public function update(){
-        return __METHOD__;
-    }
-
-    public function destroy(){
-        return __METHOD__;
-    }    
 
 }

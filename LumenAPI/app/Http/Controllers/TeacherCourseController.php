@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Teacher;
+
 class TeacherCourseController extends Controller
 {
     /**
@@ -14,8 +16,16 @@ class TeacherCourseController extends Controller
         //
     }
 
-    public function index(){
-        return __METHOD__;
+    public function index($teacher_id){
+        $teacher = Teacher::find($teacher_id);
+
+        if($teacher){
+            $courses = $teacher->courses;
+
+            return $this->createSuccessResponse($courses, 200);
+        }
+
+        return $this->createErrorResponse('We couldn\'t find a teacher with the given id.',404);
     }
 
     public function store(){

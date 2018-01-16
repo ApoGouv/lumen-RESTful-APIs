@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Course;
+
 class CourseStudentController extends Controller
 {
     /**
@@ -14,8 +16,17 @@ class CourseStudentController extends Controller
         //
     }
 
-    public function index(){
-        return __METHOD__;
+    public function index($course_id){
+
+        $course = Course::find($course_id);
+
+        if($course){
+            $students = $course->students;
+
+            return $this->createSuccessResponse($students, 200);
+        }
+
+        return $this->createErrorResponse('We couldn\'t find a course with the given id.',404);
     }
 
     public function store(){
